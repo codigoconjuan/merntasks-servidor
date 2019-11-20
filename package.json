@@ -4,7 +4,8 @@
   "description": "MERN API para MERN TASKS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "author": "Juan Pablo De la torre",
   "license": "ISC",
