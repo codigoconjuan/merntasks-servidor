@@ -1,0 +1,11 @@
+{
+  "name": "merntaskservidor",
+  "version": "1.0.0",
+  "description": "MERN API para MERN TASKS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Pablo De la torre",
+  "license": "ISC"
+}
