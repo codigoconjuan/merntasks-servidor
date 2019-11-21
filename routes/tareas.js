@@ -15,4 +15,10 @@ router.post('/',
     tareaController.crearTarea
 );
 
+// Obtener las tareas por proyecto
+router.get('/',
+    auth,
+    tareaController.obtenerTareas
+);
+
 module.exports = router;
