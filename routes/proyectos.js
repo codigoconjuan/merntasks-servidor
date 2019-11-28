@@ -4,6 +4,7 @@ const proyectoController = require('../controllers/proyectoController');
 const auth = require('../middleware/auth');
 const { check } = require('express-validator');
 
+
 // Crea proyectos
 // api/proyectos
 router.post('/', 
