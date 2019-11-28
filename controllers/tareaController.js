@@ -73,6 +73,7 @@ exports.actualizarTarea = async (req, res ) => {
         // Extraer el proyecto y comprobar si existe
         const { proyecto, nombre, estado } = req.body;
 
+
         // Si la tarea existe o no
         let tarea = await Tarea.findById(req.params.id);
 
@@ -89,8 +90,8 @@ exports.actualizarTarea = async (req, res ) => {
         }
         // Crear un objeto con la nueva información
         const nuevaTarea = {};
-        if(nombre) nuevaTarea.nombre = nombre;
-        if(estado)  nuevaTarea.estado = estado;
+        nuevaTarea.nombre = nombre;
+        nuevaTarea.estado = estado;
 
         // Guardar la tarea
         tarea = await Tarea.findOneAndUpdate({_id : req.params.id }, nuevaTarea, { new: true } );
